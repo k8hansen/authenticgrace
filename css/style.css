@@ -12,3 +12,13 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+p {
+  font-family: "Muli";
+}
+
+h1 {
+  font-family: "Muli";
+  font-weight: 400;
+
+}
