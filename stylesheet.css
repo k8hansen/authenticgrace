@@ -5,10 +5,11 @@
     text-decoration: none;
 }
 
+
 /* color for nav bar #FF6F61; background color = #234851; */
 
 
-/* tutorial code */
+/* My code */
 
 body {
     background-color: #f3f3f3;
@@ -62,30 +63,70 @@ header nav ul li a {
     
 }
 
-/* Index */
+/* Main (image) container */
 
-.index-banner{
+.slide-container{
     width: 100%;
     height: 100vh;
+    display:block;
+    text-align: center;
+    padding-top:150px;
 }
 
-.index-banner .dresses{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
+.new-container{
+    padding-bottom:50px;
+    /* iphone X width is 375 */
+
+}
+
+.new-container .new{
+    display:block;
+    width:100%;
+}
+
+.dresses-container{
     padding-bottom:50px;
 }
 
-.index-banner .tops{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom:50px;
+.dresses-container .dresses {
+    display:block;
+    width: 100%;
 }
 
-.index-banner .bottoms{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.tops-container{
+    padding-bottom:50px;
+    
+}
+
+.tops-container .tops{
+    display:block;
+    width:100%;
+}
+
+.bottoms-container{
+    padding-bottom:50px;
+
+}
+
+.bottoms-container .bottoms{
+    display:block;
+    width:100%;
+}
+
+.mightlike-container{
+    padding-bottom:50px;
+    
+}
+
+.mightlike-container .mightlike {
+    display:block;
+    width:100%;
+}
+
+
+
+input: {
+    width: 100px;
+    outline:none;
+    border: 1px solid #ddd;
 }
