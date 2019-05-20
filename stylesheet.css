@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Homenaje', sans-serif;
+    text-decoration: none;
+}
+
+
+/* color for nav bar #FF6F61; background color = #234851; */
+
+
+/* My code */
+
+body {
+    background-color: #f3f3f3;
+
+}
+
+header {
+    background-color: #fff;
+    width:100%;
+    height:100px;
+}
+
+header .header-logo{
+    font-family: Homemade apple;
+    font-size:24px;
+    color: #111;
+    font-weight:900;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+header nav {
+    background-color:#FF6F61;
+    height: fit-content;
+}
+
+header nav ul {
+    display:block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav .material-icons {
+    color:#111;
+    display:inline-block;
+    padding-left: 20px; 
+
+}
+header nav ul li {
+    display: inline-block;
+    float:left;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size:16px;
+    color: #111;
+    
+}
+
+/* Main (image) container */
+
+.slide-container{
+    width: 100%;
+    height: 100vh;
+    display:block;
+    text-align: center;
+    padding-top:150px;
+}
+
+.new-container{
+    padding-bottom:50px;
+    /* iphone X width is 375 */
+
+}
+
+.new-container .new{
+    display:block;
+    width:100%;
+}
+
+.dresses-container{
+    padding-bottom:50px;
+}
+
+.dresses-container .dresses {
+    display:block;
+    width: 100%;
+}
+
+.tops-container{
+    padding-bottom:50px;
+    
+}
+
+.tops-container .tops{
+    display:block;
+    width:100%;
+}
+
+.bottoms-container{
+    padding-bottom:50px;
+
+}
+
+.bottoms-container .bottoms{
+    display:block;
+    width:100%;
+}
+
+.mightlike-container{
+    padding-bottom:50px;
+    
+}
+
+.mightlike-container .mightlike {
+    display:block;
+    width:100%;
+}
+
+
+
+input: {
+    width: 100px;
+    outline:none;
+    border: 1px solid #ddd;
+}
