@@ -136,177 +136,209 @@ select {
 
 /* ----------END RESET CODE------------- */
 
-  
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-    }
-    #container {
-        min-height: 100%;
-    }
-    #main {
-        overflow: auto;
-    }
-    /* color for nav bar #FF6F61; background color = #234851; */
-    /* My code */
-    h3 {
-        color: white;
-        font-family: 'Muli', sans-serif;
-        font-weight: 800;
-        letter-spacing: 3px;
-        line-height: 2.5;
-        font-size: 35px;
-    }
-    p {
-        color: black;
-        font-family: 'Muli', sans-serif;
-        font-weight: 200;
-        line-height: 1.2;
-    }
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+}
+
+
+/* color for nav bar #FF6F61; background color = #234851; */
+
+
+/* My code */
+
+h3 {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 2.5;
+    font-size: 35px;
+}
+
+p {
+    color: black;
+    font-family: 'Muli', sans-serif;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #FF6F61;
+    padding-bottom: 30px;
+}
+
+header .header-brand {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 40px;
+    color: #222;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+
+header nav ul li a {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
     header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header-brand {
         width: 100%;
-        height: auto;
-        background-color: #FF6F61;
-        padding-bottom: 30px;
     }
-    header .header-brand {
-        font-family: 'Dawning of a New Day', cursive;
-        font-size: 40px;
-        color: #222;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        padding: 20px 0;
-        text-align: center;
+    .mobile-hide {
+        display: none;
     }
-    header nav ul {
-        display: block;
-        margin: 0 auto;
-        width: fit-content;
-    }
-    header nav ul li {
-        display: inline-block;
-        float: left;
-        list-style: none;
-        padding: 0 16px;
-    }
-    header nav ul li a {
-        font-family: 'Muli', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: #222;
-        text-decoration: none;
-    }
-    /* Main (image) container */
-
-    .desktop-slide a {
-        margin: 0 auto;
-        display:none;
-        padding-top:50px;
-    }
-
-    .slide-container {
-        width: 100%;
-        display: block;
-        padding-top: 150px;
-    }
-    .image-container-rectangle {
-        padding-bottom: 50px;
-    }
-    .image-container-square {
-        padding-bottom: 50px;
-    }
-    .image-container-rectangle img {
-        display: block;
-        width: calc(100%-32px);
-        height: 325px;
-        margin: 16px 16px 0;
-        text-align: center;
-    }
-    .image-container-square img {
-        display: block;
-        width: calc(100%-32px);
-        height: 325px;
-        margin: 16px 16px 0;
-        text-align: center;
-    }
-    /* Footer */
-    footer {
-        width: 100vw;
-        padding: 40px 40px;
-        background-color: #234851;
-        margin-top: 20px;
-        position: absolute;
-        text-align: center;
-    }
-    footer p {
-        color: white;
-        letter-spacing: 2px;
-    }
-    form {
-        padding: 20px;
-        margin-bottom: 40px;
-    }
-    input[type=text] {
-        width: 25%;
-        padding: 12px 40px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border-radius: 90px;
-    }
-    text {}
-    button {
-        background-color: black;
-        border-radius: 90px;
-        /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
-    .social-icons {
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .social-icons ul {
-        list-style: none;
-    }
-    .social-icons li {
-        display: inline-block;
-        max-width: 10px;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .social-icons i {
-        font-size: 40px;
-        padding-right: 40px;
-    }
-    .social-icons li:hover {
-        display: inline-block;
-        max-width: 10px;
-        margin: 50px;
-        cursor: pointer;
-    }
-    .social-icons li:visited {
-        display: inline-block;
-        max-width: 10px;
-        text-decoration: none;
-    }
-    i:visited {
-        text-decoration: none;
-    }
-    i:hover {
-        color: #FF6F61;
+    .search {
+        padding-right: 15px;
     }
 }
 
 
-/*--------PHONE----------*/
+/* Main (image) container */
 
+.desktop-slide a {
+    margin: 0 auto;
+    display: none;
+    padding-top: 50px;
+}
+
+.slide-container {
+    width: 100%;
+    display: block;
+    padding-top: 150px;
+}
+
+.image-container {
+    padding-bottom: 50px;
+}
+
+.image-container img {
+    width: calc(100%-32px);
+    margin: 16px 16px 0;
+}
+
+@media (max-width: 600px) {
+    .slide-container {
+        width: 100%;
+        text-align: center;
+    }
+    .image-container img {
+        margin: 16px auto;
+        max-width: 100%;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 40px 40px;
+    background-color: #234851;
+    margin-top: 20px;
+    position: absolute;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    letter-spacing: 2px;
+}
+
+form {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 12px 40px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 90px;
+}
+
+text {}
+
+button {
+    background-color: black;
+    border-radius: 90px;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.social-icons {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.social-icons ul {
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    max-width: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.social-icons a {
+    color: white;
+    padding-right: 40px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #FF6F61;
+}
+
+
+}
+
+/*--------PHONE----------*/
 @media screen and (max-width: 600px) {
     * {
         margin: 0;
@@ -314,17 +346,20 @@ select {
         font-family: 'Homenaje', sans-serif;
         text-decoration: none;
     }
+    
     html,
     body {
         height: 100%;
         margin: 0;
     }
+    
     header {
         width: 100%;
         height: auto;
         background-color: #FF6F61;
         padding-bottom: 30px;
     }
+    
     header .header-brand {
         font-family: 'Dawning of a New Day', cursive;
         font-size: 40px;
@@ -335,17 +370,20 @@ select {
         padding: 20px 0;
         text-align: center;
     }
+    
     header nav ul {
         display: block;
         margin: 0 auto;
         width: fit-content;
     }
+    
     header nav ul li {
         display: inline-block;
         float: left;
         list-style: none;
         padding: 0 16px;
     }
+    
     header nav ul li a {
         font-family: 'Muli', sans-serif;
         font-weight: 400;
@@ -353,58 +391,50 @@ select {
         color: #222;
         text-decoration: none;
     }
-
 }
 
 /* ------- DESKTOP ------- */
-
 @media only screen and (min-width: 1000px) {
     .wrapper {
-        width:1000px;
+        width: 1000px;
         margin: 0 auto;
-
     }
-
+    
     header {
         height: 75px;
     }
-
+    
     header .header-brand {
         text-align: left;
         line-height: 38px;
         margin: 31px 0;
         padding: 0 20px 0 40px;
         border-right: 3px solid #111;
-        float:left;
+        float: left;
     }
-
+    
     .search i {
-        float:right;
+        float: right;
         margin: 40px 40px;
     }
-
-
+    
     header nav ul {
         margin: 20px 0px 0px 20px;
-        float:left;
+        float: left;
     }
     
     header nav ul li a {
         line-height: 60px;
-        text-transform:Uppercase;
+        text-transform: Uppercase;
     }
-
+    
     .desktop-slide a {
         display: block;
         margin: 0 auto;
-        float:left;
+        float: left;
     }
-
+    
     .slide-container {
         visibility: hidden;
     }
-
-    
-
-    
-} 
+}
