@@ -136,6 +136,7 @@ select {
 
 /* ----------END RESET CODE------------- */
 
+<<<<<<< HEAD
 
 /*-----------DESKTOP START------------------*/
 
@@ -359,6 +360,9 @@ button {
         font-family: 'Homenaje', sans-serif;
         text-decoration: none;
     }
+=======
+  
+>>>>>>> 55215af15dccb6db9c01a0b0bae4c7253a28a232
     html,
     body {
         height: 100%;
@@ -398,7 +402,44 @@ button {
         color: #222;
         text-decoration: none;
     }
+<<<<<<< HEAD
     /*-------PHONE FOOTER-------------*/
+=======
+    /* Main (image) container */
+
+    .desktop-slide a {
+        margin: 0 auto;
+        display:none;
+        padding-top:50px;
+    }
+
+    .slide-container {
+        width: 100%;
+        display: block;
+        padding-top: 150px;
+    }
+    .image-container-rectangle {
+        padding-bottom: 50px;
+    }
+    .image-container-square {
+        padding-bottom: 50px;
+    }
+    .image-container-rectangle img {
+        display: block;
+        width: calc(100%-32px);
+        height: 325px;
+        margin: 16px 16px 0;
+        text-align: center;
+    }
+    .image-container-square img {
+        display: block;
+        width: calc(100%-32px);
+        height: 325px;
+        margin: 16px 16px 0;
+        text-align: center;
+    }
+    /* Footer */
+>>>>>>> 55215af15dccb6db9c01a0b0bae4c7253a28a232
     footer {
         width: 100vw;
         padding: 40px 40px;
@@ -462,4 +503,119 @@ button {
         max-width: 10px;
         text-decoration: none;
     }
+<<<<<<< HEAD
 }
+=======
+    i:visited {
+        text-decoration: none;
+    }
+    i:hover {
+        color: #FF6F61;
+    }
+}
+
+
+/*--------PHONE----------*/
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Homenaje', sans-serif;
+        text-decoration: none;
+    }
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        height: auto;
+        background-color: #FF6F61;
+        padding-bottom: 30px;
+    }
+    header .header-brand {
+        font-family: 'Dawning of a New Day', cursive;
+        font-size: 40px;
+        color: #222;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    header nav ul {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    header nav ul li {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 16px;
+    }
+    header nav ul li a {
+        font-family: 'Muli', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #222;
+        text-decoration: none;
+    }
+
+}
+
+/* ------- DESKTOP ------- */
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width:1000px;
+        margin: 0 auto;
+
+    }
+
+    header {
+        height: 75px;
+    }
+
+    header .header-brand {
+        text-align: left;
+        line-height: 38px;
+        margin: 31px 0;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+        float:left;
+    }
+
+    .search i {
+        float:right;
+        margin: 40px 40px;
+    }
+
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float:left;
+    }
+    
+    header nav ul li a {
+        line-height: 60px;
+        text-transform:Uppercase;
+    }
+
+    .desktop-slide a {
+        display: block;
+        margin: 0 auto;
+        float:left;
+    }
+
+    .slide-container {
+        visibility: hidden;
+    }
+
+    
+
+    
+} 
+>>>>>>> 55215af15dccb6db9c01a0b0bae4c7253a28a232
