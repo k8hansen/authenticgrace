@@ -173,10 +173,8 @@ p {
 }
 
 header {
-    width: 100%;
-    height: auto;
+    display: flex;
     background-color: #B2DFDB;
-    padding-bottom: 30px;
 }
 
 header .header-brand {
@@ -211,14 +209,21 @@ header nav ul li a {
     text-decoration: none;
 }
 
+.search {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.search i {
+    padding: 40px 40px 40px 0;
+}
+
 @media (max-width: 600px) {
-    main {
-        width: 100vw;
-    }
     header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-content: center;
     }
     .header-brand {
         width: 100%;
@@ -229,21 +234,38 @@ header nav ul li a {
     .search {
         padding-right: 15px;
     }
+    .search i {
+        padding: 0 20px 20px 0;
+    }
 }
 
 
 /* Main (image) container */
 
+
+/* Show large images and hide small images for desktop */
+
 .desktop-slide a {
     margin: 0 auto;
-    display: none;
     padding-top: 50px;
 }
 
 .slide-container {
+    display: none;
     width: 100%;
-    display: block;
     padding-top: 150px;
+}
+
+
+/* Show small images and hide large images for mobile */
+
+@media (max-width: 600px) {
+    .desktop-slide a {
+        display: none;
+    }
+    .slide-container {
+        display: block;
+    }
 }
 
 .image-container {
@@ -251,19 +273,7 @@ header nav ul li a {
 }
 
 .image-container img {
-    width: calc(100%-32px);
-    margin: 16px 16px 0;
-}
-
-@media (max-width: 600px) {
-    .slide-container {
-        width: 100%;
-        text-align: center;
-    }
-    .image-container img {
-        margin: 16px auto;
-        max-width: 100%;
-    }
+    width: 100%;
 }
 
 
@@ -311,7 +321,7 @@ button {
 
 @media screen and (max-width: 600px) {
     form {
-        visibility: hidden;
+        display: none;
         text-align: center;
     }
     footer {
@@ -355,9 +365,8 @@ button {
 }
 
 
-}
-
 /*--------PHONE----------*/
+
 @media screen and (max-width: 600px) {
     * {
         margin: 0;
@@ -365,20 +374,15 @@ button {
         font-family: 'Homenaje', sans-serif;
         text-decoration: none;
     }
-    
     html,
     body {
         height: 100%;
         margin: 0;
     }
-    
     header {
-        width: 100%;
-        height: auto;
         background-color: #FF6F61;
         padding-bottom: 30px;
     }
-    
     header .header-brand {
         font-family: 'Dawning of a New Day', cursive;
         font-size: 40px;
@@ -389,20 +393,17 @@ button {
         padding: 20px 0;
         text-align: center;
     }
-    
     header nav ul {
         display: block;
         margin: 0 auto;
         width: fit-content;
     }
-    
     header nav ul li {
         display: inline-block;
         float: left;
         list-style: none;
         padding: 0 16px;
     }
-    
     header nav ul li a {
         font-family: 'Muli', sans-serif;
         font-weight: 400;
@@ -412,17 +413,10 @@ button {
     }
 }
 
+
 /* ------- DESKTOP ------- */
+
 @media only screen and (min-width: 601px) {
-    .wrapper {
-        width: 100vw;
-        margin: 0 auto;
-    }
-    
-    header {
-        height: 75px;
-    }
-    
     header .header-brand {
         text-align: left;
         line-height: 38px;
@@ -430,34 +424,19 @@ button {
         margin: 31px 0;
         padding: 0 20px 0 40px;
         border-right: 3px solid #111;
-        float: left;
     }
-    
-    .search i {
-        float: right;
-        margin: 40px 40px;
-    }
-    
     header nav ul {
         margin: 20px 0px 0px 20px;
-        float: left;
     }
-    
     header nav ul li a {
         line-height: 60px;
         text-transform: Uppercase;
     }
-    
     .desktop-slide a {
         display: block;
         margin: 0 auto;
         text-align: center;
     }
-    
-    .slide-container {
-        visibility: hidden;
-    }
-    
     .mobilejoin {
         display: none;
     }
