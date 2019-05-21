@@ -157,7 +157,7 @@ body {
 /* My code */
 
 h3 {
-    color: white;
+    color: #FF6F61;
     font-family: 'Muli', sans-serif;
     font-weight: 800;
     letter-spacing: 3px;
@@ -173,10 +173,8 @@ p {
 }
 
 header {
-    width: 100%;
-    height: auto;
-    background-color: #FF6F61;
-    padding-bottom: 30px;
+    display: flex;
+    background-color: #B2DFDB;
 }
 
 header .header-brand {
@@ -211,11 +209,21 @@ header nav ul li a {
     text-decoration: none;
 }
 
+.search {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.search i {
+    padding: 40px 40px 40px 0;
+}
+
 @media (max-width: 600px) {
     header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-content: center;
     }
     .header-brand {
         width: 100%;
@@ -226,41 +234,46 @@ header nav ul li a {
     .search {
         padding-right: 15px;
     }
+    .search i {
+        padding: 0 20px 20px 0;
+    }
 }
 
 
 /* Main (image) container */
 
+
+/* Show large images and hide small images for desktop */
+
 .desktop-slide a {
     margin: 0 auto;
-    display: none;
     padding-top: 50px;
 }
 
 .slide-container {
+    display: none;
     width: 100%;
-    display: block;
     padding-top: 150px;
 }
 
+
+/* Show small images and hide large images for mobile */
+
+@media (max-width: 600px) {
+    .desktop-slide a {
+        display: none;
+    }
+    .slide-container {
+        display: block;
+    }
+}
+
 .image-container {
-    padding-bottom: 50px;
+    text-align: center;
 }
 
 .image-container img {
-    width: calc(100%-32px);
-    margin: 16px 16px 0;
-}
-
-@media (max-width: 600px) {
-    .slide-container {
-        width: 100%;
-        text-align: center;
-    }
-    .image-container img {
-        margin: 16px auto;
-        max-width: 100%;
-    }
+    width: 100%;
 }
 
 
@@ -269,14 +282,14 @@ header nav ul li a {
 footer {
     width: 100%;
     padding: 40px 40px;
-    background-color: #234851;
+    background-color: #F2E6DA;
     margin-top: 20px;
     position: absolute;
     text-align: center;
 }
 
 footer p {
-    color: white;
+    color: black;
     letter-spacing: 2px;
 }
 
@@ -293,8 +306,6 @@ input[type=text] {
     border-radius: 90px;
 }
 
-text {}
-
 button {
     background-color: black;
     border-radius: 90px;
@@ -306,6 +317,24 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        display: none;
+        text-align: center;
+    }
+    footer {
+        align-content: center;
+    }
+    .footerdiv {
+        display: none;
+    }
+    .mobilejoin h3 {
+        font-size: 18px;
+        letter-spacing: 0;
+        text-align: center;
+    }
 }
 
 .social-icons {
@@ -326,7 +355,7 @@ button {
 }
 
 .social-icons a {
-    color: white;
+    color: black;
     padding-right: 40px;
     text-decoration: none;
 }
@@ -336,9 +365,8 @@ button {
 }
 
 
-}
-
 /*--------PHONE----------*/
+
 @media screen and (max-width: 600px) {
     * {
         margin: 0;
@@ -346,20 +374,15 @@ button {
         font-family: 'Homenaje', sans-serif;
         text-decoration: none;
     }
-    
     html,
     body {
         height: 100%;
         margin: 0;
     }
-    
     header {
-        width: 100%;
-        height: auto;
         background-color: #FF6F61;
         padding-bottom: 30px;
     }
-    
     header .header-brand {
         font-family: 'Dawning of a New Day', cursive;
         font-size: 40px;
@@ -370,20 +393,17 @@ button {
         padding: 20px 0;
         text-align: center;
     }
-    
     header nav ul {
         display: block;
         margin: 0 auto;
         width: fit-content;
     }
-    
     header nav ul li {
         display: inline-block;
         float: left;
         list-style: none;
         padding: 0 16px;
     }
-    
     header nav ul li a {
         font-family: 'Muli', sans-serif;
         font-weight: 400;
@@ -393,48 +413,31 @@ button {
     }
 }
 
+
 /* ------- DESKTOP ------- */
-@media only screen and (min-width: 1000px) {
-    .wrapper {
-        width: 1000px;
-        margin: 0 auto;
-    }
-    
-    header {
-        height: 75px;
-    }
-    
+
+@media only screen and (min-width: 601px) {
     header .header-brand {
         text-align: left;
         line-height: 38px;
+        font-size: 40px;
         margin: 31px 0;
         padding: 0 20px 0 40px;
         border-right: 3px solid #111;
-        float: left;
     }
-    
-    .search i {
-        float: right;
-        margin: 40px 40px;
-    }
-    
     header nav ul {
         margin: 20px 0px 0px 20px;
-        float: left;
     }
-    
     header nav ul li a {
         line-height: 60px;
         text-transform: Uppercase;
     }
-    
     .desktop-slide a {
         display: block;
         margin: 0 auto;
-        float: left;
+        text-align: center;
     }
-    
-    .slide-container {
-        visibility: hidden;
+    .mobilejoin {
+        display: none;
     }
 }
