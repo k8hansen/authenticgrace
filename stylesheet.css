@@ -157,7 +157,7 @@ body {
 /* My code */
 
 h3 {
-    color: white;
+    color: #FF6F61;
     font-family: 'Muli', sans-serif;
     font-weight: 800;
     letter-spacing: 3px;
@@ -175,7 +175,7 @@ p {
 header {
     width: 100%;
     height: auto;
-    background-color: #FF6F61;
+    background-color: #B2DFDB;
     padding-bottom: 30px;
 }
 
@@ -212,6 +212,9 @@ header nav ul li a {
 }
 
 @media (max-width: 600px) {
+    main {
+        width: 100vw;
+    }
     header {
         display: flex;
         flex-wrap: wrap;
@@ -244,7 +247,7 @@ header nav ul li a {
 }
 
 .image-container {
-    padding-bottom: 50px;
+    text-align: center;
 }
 
 .image-container img {
@@ -269,14 +272,14 @@ header nav ul li a {
 footer {
     width: 100%;
     padding: 40px 40px;
-    background-color: #234851;
+    background-color: #F2E6DA;
     margin-top: 20px;
     position: absolute;
     text-align: center;
 }
 
 footer p {
-    color: white;
+    color: black;
     letter-spacing: 2px;
 }
 
@@ -293,8 +296,6 @@ input[type=text] {
     border-radius: 90px;
 }
 
-text {}
-
 button {
     background-color: black;
     border-radius: 90px;
@@ -306,6 +307,24 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        visibility: hidden;
+        text-align: center;
+    }
+    footer {
+        align-content: center;
+    }
+    .footerdiv {
+        display: none;
+    }
+    .mobilejoin h3 {
+        font-size: 18px;
+        letter-spacing: 0;
+        text-align: center;
+    }
 }
 
 .social-icons {
@@ -326,7 +345,7 @@ button {
 }
 
 .social-icons a {
-    color: white;
+    color: black;
     padding-right: 40px;
     text-decoration: none;
 }
@@ -394,9 +413,9 @@ button {
 }
 
 /* ------- DESKTOP ------- */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 601px) {
     .wrapper {
-        width: 1000px;
+        width: 100vw;
         margin: 0 auto;
     }
     
@@ -407,6 +426,7 @@ button {
     header .header-brand {
         text-align: left;
         line-height: 38px;
+        font-size: 40px;
         margin: 31px 0;
         padding: 0 20px 0 40px;
         border-right: 3px solid #111;
@@ -431,10 +451,14 @@ button {
     .desktop-slide a {
         display: block;
         margin: 0 auto;
-        float: left;
+        text-align: center;
     }
     
     .slide-container {
         visibility: hidden;
+    }
+    
+    .mobilejoin {
+        display: none;
     }
 }
