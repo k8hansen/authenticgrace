@@ -136,13 +136,7 @@ select {
 
 /* ----------END RESET CODE------------- */
 
-@media screen and (min-width: 601px) {
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Homenaje', sans-serif;
-        text-decoration: none;
-    }
+  
     html,
     body {
         height: 100%;
@@ -205,6 +199,13 @@ select {
         text-decoration: none;
     }
     /* Main (image) container */
+
+    .desktop-slide a {
+        margin: 0 auto;
+        display:none;
+        padding-top:50px;
+    }
+
     .slide-container {
         width: 100%;
         display: block;
@@ -352,4 +353,58 @@ select {
         color: #222;
         text-decoration: none;
     }
+
 }
+
+/* ------- DESKTOP ------- */
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width:1000px;
+        margin: 0 auto;
+
+    }
+
+    header {
+        height: 75px;
+    }
+
+    header .header-brand {
+        text-align: left;
+        line-height: 38px;
+        margin: 31px 0;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+        float:left;
+    }
+
+    .search i {
+        float:right;
+        margin: 40px 40px;
+    }
+
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float:left;
+    }
+    
+    header nav ul li a {
+        line-height: 60px;
+        text-transform:Uppercase;
+    }
+
+    .desktop-slide a {
+        display: block;
+        margin: 0 auto;
+        float:left;
+    }
+
+    .slide-container {
+        visibility: hidden;
+    }
+
+    
+
+    
+} 
