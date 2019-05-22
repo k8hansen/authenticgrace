@@ -535,7 +535,13 @@ button {
     }
 }
 
-.contact {
+.contact p {
     padding-bottom: 30px;
     font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact p {
+        font-size: 10px;
+    }
 }
