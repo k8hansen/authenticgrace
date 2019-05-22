@@ -54,7 +54,6 @@ canvas,
 details,
 figcaption,
 figure,
-header,
 hgroup,
 menu,
 nav,
@@ -78,7 +77,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 menu,
@@ -253,7 +251,6 @@ header nav ul li a {
 .slide-container {
     display: none;
     width: 100%;
-    padding-top: 150px;
 }
 
 
@@ -281,16 +278,19 @@ header nav ul li a {
 
 footer {
     width: 100%;
-    padding: 40px 40px;
     background-color: #F2E6DA;
     margin-top: 20px;
-    position: absolute;
     text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 25px;
 }
 
-footer p {
+.footerdiv p {
     color: black;
     letter-spacing: 2px;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 form {
@@ -322,10 +322,10 @@ button {
 @media screen and (max-width: 600px) {
     form {
         display: none;
-        text-align: center;
     }
     footer {
-        align-content: center;
+        display: block;
+        justify-content: center;
     }
     .footerdiv {
         display: none;
@@ -380,7 +380,7 @@ button {
         margin: 0;
     }
     header {
-        background-color: #FF6F61;
+        background-color: #B2DFDB;
         padding-bottom: 30px;
     }
     header .header-brand {
@@ -420,7 +420,7 @@ button {
     header .header-brand {
         text-align: left;
         line-height: 38px;
-        font-size: 40px;
+        font-size: 60px;
         margin: 31px 0;
         padding: 0 20px 0 40px;
         border-right: 3px solid #111;
@@ -440,4 +440,102 @@ button {
     .mobilejoin {
         display: none;
     }
+}
+
+
+/*---------SLIDESHOW TESTIMONIAL--------*/
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+}
+
+
+/* Slides */
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .mySlides {
+        padding: 20px;
+    }
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 25px;
+    color: #FF6F61;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .prev,
+    .next {
+        font-size: 25px;
+    }
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.slideshow-container q {
+    font-family: 'Muli';
+    font-weight: 300;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slideshow-container q {
+        font-size: 18px;
+    }
+}
+
+.author {
+    color: black;
+    font-family: 'muli';
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .author {
+        font-size: 15px;
+    }
+}
+
+.contact {
+    padding-bottom: 30px;
+    font-size: 12px;
 }
