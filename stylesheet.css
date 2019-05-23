@@ -119,7 +119,7 @@ select {
 }
 
 
-/* ----------END RESET CODE------------- */
+/*-----END RESET CODE----- */
 
 
 /*-----------------------GENERAL STYLES --------------------------*/
@@ -155,7 +155,7 @@ p {
 }
 
 
-/*----------------------HEADER--------------------------*/
+/*----------------------------HEADER--------------------------*/
 
 header {
     display: flex;
@@ -177,6 +177,7 @@ header nav ul {
     display: block;
     margin: 0 auto;
     width: fit-content;
+    margin: 20px 0px 0px 20px;
 }
 
 header nav ul li {
@@ -192,15 +193,25 @@ header nav ul li a {
     font-size: 16px;
     color: #222;
     text-decoration: none;
+    line-height: 60px;
+    text-transform: Uppercase;
 }
 
-.search {
-    flex-grow: 1;
-    text-align: right;
+.desktop-slide a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.search i {
-    padding: 40px 40px 40px 0;
+@media only screen and (min-width: 601px) {
+    header .header-brand {
+        text-align: left;
+        line-height: 38px;
+        font-size: 60px;
+        margin: 31px 0;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+    }
 }
 
 @media (max-width: 600px) {
@@ -243,6 +254,21 @@ header nav ul li a {
         color: #222;
         text-decoration: none;
     }
+}
+
+
+/*----------SEARCH---------*/
+
+.search {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.search i {
+    padding: 40px 40px 40px 0;
+}
+
+@media screen and (max-width: 600px) {
     .mobile-hide {
         display: none;
     }
@@ -254,22 +280,8 @@ header nav ul li a {
     }
 }
 
-@media screen and (max-width: 600px) {
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Homenaje', sans-serif;
-        text-decoration: none;
-    }
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-    }
-}
 
-
-/*------------------------MAIN--------------------*/
+/*------------------------------------MAIN-----------------------------------*/
 
 .desktop-slide a {
     margin: 0 auto;
@@ -279,6 +291,10 @@ header nav ul li a {
 .slide-container {
     display: none;
     width: 100%;
+}
+
+.mobilejoin {
+    display: none;
 }
 
 
@@ -365,6 +381,9 @@ button {
     }
 }
 
+
+/*--------------------SOCIAL ICONS---------------*/
+
 .social-icons {
     text-align: center;
     padding-bottom: 50px;
@@ -393,39 +412,7 @@ button {
 }
 
 
-/*--------PHONE----------*/
-
-
-/* ------- DESKTOP ------- */
-
-@media only screen and (min-width: 601px) {
-    header .header-brand {
-        text-align: left;
-        line-height: 38px;
-        font-size: 60px;
-        margin: 31px 0;
-        padding: 0 20px 0 40px;
-        border-right: 3px solid #111;
-    }
-    header nav ul {
-        margin: 20px 0px 0px 20px;
-    }
-    header nav ul li a {
-        line-height: 60px;
-        text-transform: Uppercase;
-    }
-    .desktop-slide a {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .mobilejoin {
-        display: none;
-    }
-}
-
-
-/*---------SLIDESHOW TESTIMONIAL--------*/
+/*----------------------SLIDESHOW TESTIMONIAL------------------*/
 
 
 /* Slideshow container */
