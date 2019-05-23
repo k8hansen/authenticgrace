@@ -155,7 +155,7 @@ p {
 }
 
 
-/*----------------------------HEADER--------------------------*/
+/*----------------------------DESKTOP HEADER--------------------------*/
 
 header {
     display: flex;
@@ -214,6 +214,9 @@ header nav ul li a {
     }
 }
 
+
+/*----------------------------MOBILE HEADER--------------------------*/
+
 @media (max-width: 600px) {
     header {
         display: flex;
@@ -221,7 +224,7 @@ header nav ul li a {
         justify-content: space-between;
         align-content: center;
         background-color: #B2DFDB;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
     .header-brand {
         width: 100%;
