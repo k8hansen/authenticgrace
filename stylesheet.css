@@ -98,24 +98,11 @@ a {
     text-decoration: none;
 }
 
-
-/* change colours to suit your needs */
-
 ins {
     background-color: #ff9;
     color: #000;
     text-decoration: none;
 }
-
-
-/* change colours to suit your needs */
-
-del {
-    text-decoration: line-through;
-}
-
-
-/* change border colour to suit your needs */
 
 hr {
     display: block;
@@ -134,6 +121,9 @@ select {
 
 /* ----------END RESET CODE------------- */
 
+
+/*-----------------------GENERAL STYLES --------------------------*/
+
 html,
 body {
     height: 100%;
@@ -147,12 +137,6 @@ body {
 #main {
     overflow: auto;
 }
-
-
-/* color for nav bar #FF6F61; background color = #234851; */
-
-
-/* My code */
 
 h3 {
     color: #FF6F61;
@@ -169,6 +153,9 @@ p {
     font-weight: 200;
     line-height: 1.2;
 }
+
+
+/*----------------------HEADER--------------------------*/
 
 header {
     display: flex;
@@ -222,9 +209,39 @@ header nav ul li a {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
+        background-color: #B2DFDB;
+        padding-bottom: 30px;
     }
     .header-brand {
         width: 100%;
+    }
+    header .header-brand {
+        font-family: 'Dawning of a New Day', cursive;
+        font-size: 40px;
+        color: #222;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    header nav ul {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    header nav ul li {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 16px;
+    }
+    header nav ul li a {
+        font-family: 'Muli', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #222;
+        text-decoration: none;
     }
     .mobile-hide {
         display: none;
@@ -237,11 +254,22 @@ header nav ul li a {
     }
 }
 
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Homenaje', sans-serif;
+        text-decoration: none;
+    }
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+}
 
-/* Main (image) container */
 
-
-/* Show large images and hide small images for desktop */
+/*------------------------MAIN--------------------*/
 
 .desktop-slide a {
     margin: 0 auto;
@@ -274,7 +302,7 @@ header nav ul li a {
 }
 
 
-/* Footer */
+/* -------------------------Footer------------------------- */
 
 footer {
     width: 100%;
@@ -366,52 +394,6 @@ button {
 
 
 /*--------PHONE----------*/
-
-@media screen and (max-width: 600px) {
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Homenaje', sans-serif;
-        text-decoration: none;
-    }
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-    }
-    header {
-        background-color: #B2DFDB;
-        padding-bottom: 30px;
-    }
-    header .header-brand {
-        font-family: 'Dawning of a New Day', cursive;
-        font-size: 40px;
-        color: #222;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        padding: 20px 0;
-        text-align: center;
-    }
-    header nav ul {
-        display: block;
-        margin: 0 auto;
-        width: fit-content;
-    }
-    header nav ul li {
-        display: inline-block;
-        float: left;
-        list-style: none;
-        padding: 0 16px;
-    }
-    header nav ul li a {
-        font-family: 'Muli', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: #222;
-        text-decoration: none;
-    }
-}
 
 
 /* ------- DESKTOP ------- */
