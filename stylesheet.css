@@ -68,7 +68,6 @@ video {
     border: 0;
     outline: 0;
     font-size: 100%;
-    vertical-align: baseline;
     background: transparent;
 }
 
@@ -93,29 +92,15 @@ a {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    vertical-align: baseline;
     background: transparent;
     text-decoration: none;
 }
-
-
-/* change colours to suit your needs */
 
 ins {
     background-color: #ff9;
     color: #000;
     text-decoration: none;
 }
-
-
-/* change colours to suit your needs */
-
-del {
-    text-decoration: line-through;
-}
-
-
-/* change border colour to suit your needs */
 
 hr {
     display: block;
@@ -132,7 +117,10 @@ select {
 }
 
 
-/* ----------END RESET CODE------------- */
+/*-----END RESET CODE----- */
+
+
+/*----------------#GENERALSTYLES---------------*/
 
 html,
 body {
@@ -148,19 +136,14 @@ body {
     overflow: auto;
 }
 
-
-/* color for nav bar #FF6F61; background color = #234851; */
-
-
-/* My code */
-
 h3 {
     color: #FF6F61;
     font-family: 'Muli', sans-serif;
     font-weight: 800;
     letter-spacing: 3px;
-    line-height: 2.5;
+    line-height: 1.5;
     font-size: 35px;
+    margin: 0;
 }
 
 p {
@@ -169,6 +152,9 @@ p {
     font-weight: 200;
     line-height: 1.2;
 }
+
+
+/*----------------------------DESKTOP HEADER--------------------------*/
 
 header {
     display: flex;
@@ -188,8 +174,8 @@ header .header-brand {
 
 header nav ul {
     display: block;
-    margin: 0 auto;
     width: fit-content;
+    margin: 20px 0px 0px 20px;
 }
 
 header nav ul li {
@@ -205,7 +191,74 @@ header nav ul li a {
     font-size: 16px;
     color: #222;
     text-decoration: none;
+    line-height: 60px;
+    text-transform: Uppercase;
 }
+
+.desktop-slide a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media only screen and (min-width: 601px) {
+    header .header-brand {
+        text-align: left;
+        line-height: 38px;
+        font-size: 60px;
+        margin: 31px 0;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+    }
+}
+
+
+/*----------------------------MOBILE HEADER--------------------------*/
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        background-color: #B2DFDB;
+        padding-bottom: 10px;
+    }
+    .header-brand {
+        width: 100%;
+    }
+    header .header-brand {
+        font-family: 'Dawning of a New Day', cursive;
+        font-size: 40px;
+        color: #222;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    header nav ul {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    header nav ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 16px;
+    }
+    header nav ul li a {
+        font-family: 'Muli', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #222;
+        text-decoration: none;
+        line-height: 1;
+    }
+}
+
+
+/*----------SEARCH---------*/
 
 .search {
     flex-grow: 1;
@@ -216,16 +269,7 @@ header nav ul li a {
     padding: 40px 40px 40px 0;
 }
 
-@media (max-width: 600px) {
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
-    }
-    .header-brand {
-        width: 100%;
-    }
+@media screen and (max-width: 600px) {
     .mobile-hide {
         display: none;
     }
@@ -238,10 +282,7 @@ header nav ul li a {
 }
 
 
-/* Main (image) container */
-
-
-/* Show large images and hide small images for desktop */
+/*------------------------------------MAIN-----------------------------------*/
 
 .desktop-slide a {
     margin: 0 auto;
@@ -251,6 +292,10 @@ header nav ul li a {
 .slide-container {
     display: none;
     width: 100%;
+}
+
+.mobilejoin {
+    display: none;
 }
 
 
@@ -274,7 +319,7 @@ header nav ul li a {
 }
 
 
-/* Footer */
+/* -------------------------Footer------------------------- */
 
 footer {
     width: 100%;
@@ -295,7 +340,7 @@ footer {
 
 form {
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 input[type=text] {
@@ -337,6 +382,9 @@ button {
     }
 }
 
+
+/*--------------------SOCIAL ICONS---------------*/
+
 .social-icons {
     text-align: center;
     padding-bottom: 50px;
@@ -365,85 +413,7 @@ button {
 }
 
 
-/*--------PHONE----------*/
-
-@media screen and (max-width: 600px) {
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Homenaje', sans-serif;
-        text-decoration: none;
-    }
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-    }
-    header {
-        background-color: #B2DFDB;
-        padding-bottom: 30px;
-    }
-    header .header-brand {
-        font-family: 'Dawning of a New Day', cursive;
-        font-size: 40px;
-        color: #222;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        padding: 20px 0;
-        text-align: center;
-    }
-    header nav ul {
-        display: block;
-        margin: 0 auto;
-        width: fit-content;
-    }
-    header nav ul li {
-        display: inline-block;
-        float: left;
-        list-style: none;
-        padding: 0 16px;
-    }
-    header nav ul li a {
-        font-family: 'Muli', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: #222;
-        text-decoration: none;
-    }
-}
-
-
-/* ------- DESKTOP ------- */
-
-@media only screen and (min-width: 601px) {
-    header .header-brand {
-        text-align: left;
-        line-height: 38px;
-        font-size: 60px;
-        margin: 31px 0;
-        padding: 0 20px 0 40px;
-        border-right: 3px solid #111;
-    }
-    header nav ul {
-        margin: 20px 0px 0px 20px;
-    }
-    header nav ul li a {
-        line-height: 60px;
-        text-transform: Uppercase;
-    }
-    .desktop-slide a {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .mobilejoin {
-        display: none;
-    }
-}
-
-
-/*---------SLIDESHOW TESTIMONIAL--------*/
+/*----------------------SLIDESHOW TESTIMONIAL------------------*/
 
 
 /* Slideshow container */
@@ -506,8 +476,7 @@ button {
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: black;
 }
 
 .slideshow-container q {
@@ -518,7 +487,7 @@ button {
 
 @media only screen and (max-width: 600px) {
     .slideshow-container q {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -543,5 +512,48 @@ button {
 @media only screen and (max-width: 600px) {
     .contact p {
         font-size: 10px;
+    }
+}
+
+
+/* --------------------------- PAGE 2 ------------------*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    width: 23%;
+    margin: 0 1%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
     }
 }
