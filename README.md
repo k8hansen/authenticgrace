@@ -23,3 +23,5 @@ Stephanie McInelly + Kate Hansen
 [Image design] (https://www.canva.com)
 
 [Other images] (https://unsplash.com)
+
+Feature dress image (Prince Akachi via Unsplash)
