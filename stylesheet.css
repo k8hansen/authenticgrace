@@ -595,8 +595,7 @@ button {
 
 .gallery .full,
 .gallery .full img {
-    height: 300px;
-    width: auto;
+    height: 600px;
 }
 
 .gallery .previews a,
@@ -606,7 +605,7 @@ button {
 
 .gallery .previews a:hover,
 .gallery .previews a.selected {
-    border: 4px solid #777;
+    border: 4px solid #B2DFDB;
 }
 
 .gallery .full img:hover {
