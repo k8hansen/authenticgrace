@@ -5,7 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 
+
     <title>Authentic grace</title>
+
+
+
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,6 +21,7 @@
 </head>
 
 <body>
+
     <header>
         <a href="index.html" class="header-brand">Authentic Grace</a>
         <nav>
@@ -36,41 +41,62 @@
     </header>
 
     <div class="mainproductwrapper">
-        <section class="product-gallery">
+        <div class="container clearfix">
+            <div class="gallery">
 
+                <div class="previews">
+                    <a href="#" class="selected" data-full="/assets/feature_01.jpg"><img src="/assets/feature_01_small.jpg" /></a>
+                    <a href="#" data-full="/assets/feature02.jpg"><img src="/assets/feature02_small.jpg" /></a>
+                    <a href="#" data-full="/assets/feature03.jpg"><img src="/assets/feature03_small.jpg" /></a>
+                    <a href="#" data-full="/assets/feature04.jpg"><img src="/assets/feature04_small.jpg" /></a>
+                </div>
 
-        </section>
-
-
-        <section class="product-details">
-            <div class="product-title">
-            </div>
-            <div class="product-price">
-
-            </div>
-
-            <div class="product-description">
-
-            </div>
-
-            <div class="color">
+                <div class="full">
+                    <!-- first image is viewable to start -->
+                    <img src="images/top1large.jpg" />
+                </div>
 
             </div>
+        </div>
+    </div>
 
-            <div class="size">
-
-            </div>
-
-            <div class="stock">
-
-            </div>
-
-            <form class="qty-to-cart"></form>
-            <button class="add-to-cart"></button>
+    </div>
 
 
+    </section>
 
-        </section>
+
+    <section class="product-details">
+        <div class="product-title">
+        </div>
+        <div class="product-price">
+
+        </div>
+
+        <div class="product-description">
+
+        </div>
+
+        <div class="color">
+
+        </div>
+
+        <div class="size">
+
+        </div>
+
+        <div class="stock">
+
+        </div>
+
+        <form class="qty-to-cart"></form>
+        <button class="add-to-cart"></button>
+
+
+        </form>
+
+
+    </section>
 
     </div>
 
@@ -110,6 +136,26 @@
 
     </footer>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('a').click(function() {
+                var largeImage = $(this).attr('data-full');
+                $('.selected').removeClass();
+                $(this).addClass('selected');
+                $('.full img').hide();
+                $('.full img').attr('src', largeImage);
+                $('.full img').fadeIn();
+            });
+
+            $('.full img').on('click', function() {
+                var modalImage = $(this).attr('src');
+                $.fancybox.open(modalImage);
+            });
+
+        });
+    </script>
 </body>
 
 </html>
