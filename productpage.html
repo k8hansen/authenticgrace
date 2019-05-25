@@ -8,7 +8,8 @@
 
     <title>Authentic grace</title>
     <!--code for template-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+    <script src="fancybox/jquery.fancybox.js"></script>
 
     <!--end code for template-->
 
@@ -41,7 +42,24 @@
         </div>
     </header>
     <!--begin template-->
+    <div class="container clearfix">
+        <div class="gallery">
 
+            <div class="previews">
+                <a href="#" class="selected" data-full="images/top1large.jpg"><img src="images/top1small.jpg" /></a>
+                <a href="#" data-full="images/top2large.jpg"><img src="images/top2small.jpg" /></a>
+                <a href="#" data-full="images/top3large.jpg"><img src="images/top3small.jpg" /></a>
+                <a href="#" data-full="images/top4large.jpg"><img src="images/top4small.jpg" /></a>
+                <a href="#" data-full="images/top5large.jpg"><img src="images/top5small.jpg" /></a>
+            </div>
+
+            <div class="full">
+                <!-- first image is viewable to start -->
+                <img src="images/top1large.jpg" />
+            </div>
+
+        </div>
+    </div>
 
     <!--end template-->
     <footer id="footer">
@@ -78,7 +96,27 @@
         </div>
 
     </footer>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('a').click(function() {
+                var largeImage = $(this).attr('data-full');
+                $('.selected').removeClass();
+                $(this).addClass('selected');
+                $('.full img').hide();
+                $('.full img').attr('src', largeImage);
+                $('.full img').fadeIn();
+            });
+
+            $('.full img').on('click', function() {
+                var modalImage = $(this).attr('src');
+                $.fancybox.open(modalImage);
+            });
+
+        });
+    </script>
 
 </body>
 
