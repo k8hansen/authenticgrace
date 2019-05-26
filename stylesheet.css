@@ -684,3 +684,18 @@ ul.breadcrumb li a:hover {
     height: 0;
     clear: both;
 }
+
+
+/*-------Colorselector-----------*/
+
+.colorselection {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.colorselection img {
+    margin-left: 10px;
+    border: 2px solid #eeeeee;
+}
