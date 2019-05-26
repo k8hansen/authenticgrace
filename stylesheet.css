@@ -126,6 +126,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: 'Muli', sans-serif;
 }
 
 #container {
@@ -559,7 +560,66 @@ button {
 }
 
 
-/*------------------------TEMPLATE----------------*/
+/*-------------------BREADCRUMBS-----------------*/
+
+
+/* Style the list */
+
+ul.breadcrumb {
+    padding: 10px 35px;
+    list-style: none;
+    background-color: #F2E6DA;
+}
+
+
+/* Display list items side by side */
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    color: #888888;
+}
+
+
+/* Add a slash symbol (/) before/behind each list item */
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #888888;
+    content: "/\00a0";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+    color: #888888;
+    text-decoration: none;
+}
+
+
+/* Add a color on mouse-over */
+
+ul.breadcrumb li a:hover {
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 10px;
+        color: #888888;
+    }
+    ul.breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+        background-color: #F2E6DA;
+    }
+}
+
+
+/*------------------------Gallery---------------------*/
 
 .container {
     width: 960px;
