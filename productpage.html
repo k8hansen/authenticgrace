@@ -5,7 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 
+
     <title>Authentic grace</title>
+    <!--code for template-->
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+    <script src="fancybox/jquery.fancybox.js"></script>
+
+    <!--end code for template-->
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,6 +23,7 @@
 </head>
 
 <body>
+
     <header>
         <a href="index.html" class="header-brand">Authentic Grace</a>
         <nav>
@@ -35,46 +42,37 @@
         </div>
     </header>
 
-    <div class="mainproductwrapper">
-        <section class="product-gallery">
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html">Dresses</a></li>
+        <li>Checkered Tablecloth Dress</li>
+    </ul>
+    <!--begin template-->
+    <div class="container clearfix">
+        <div class="gallery">
 
-
-        </section>
-
-
-        <section class="product-details">
-            <div class="product-title">
-            </div>
-            <div class="product-price">
-
-            </div>
-
-            <div class="product-description">
-
-            </div>
-
-            <div class="color">
-
+            <div class="previews">
+                <a href="#" class="selected" data-full="/assets/productdress6.jpg"><img src="/assets/productdress6_small.jpg" /></a>
+                <a href="#" data-full="/assets/productdress2.jpg"><img src="/assets/productdress2_small.jpg" /></a>
+                <a href="#" data-full="/assets/productdress3.jpg"><img src="/assets/productdress3_small.jpg" /></a>
+                <a href="#" data-full="/assets/productdress4.jpg"><img src="/assets/productdress4_small.jpg" /></a>
+                <a href="#" data-full="/assets/productdress5.jpg"><img src="/assets/productdress5_small.jpg" /></a>
             </div>
 
-            <div class="size">
-
+            <div class="full">
+                <!-- first image is viewable to start -->
+                <img src="/assets/productdress6.jpg" />
             </div>
 
-            <div class="stock">
-
+            <div class="colorselection">
+                <p>Color:</p>
+                <img class="colorselector" src="assets/colorselector.jpg"></img>
             </div>
 
-            <form class="qty-to-cart"></form>
-            <button class="add-to-cart"></button>
-
-
-
-        </section>
-
+        </div>
     </div>
 
-
+    <!--end template-->
     <footer id="footer">
         <div class="footerdiv">
             <h3>GET OUR EMAILS</h3>
@@ -110,6 +108,28 @@
 
     </footer>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('a').click(function() {
+                var largeImage = $(this).attr('data-full');
+                $('.selected').removeClass();
+                $(this).addClass('selected');
+                $('.full img').hide();
+                $('.full img').attr('src', largeImage);
+                $('.full img').fadeIn();
+            });
+
+            $('.full img').on('click', function() {
+                var modalImage = $(this).attr('src');
+                $.fancybox.open(modalImage);
+            });
+
+        });
+    </script>
+
 </body>
+
 
 </html>

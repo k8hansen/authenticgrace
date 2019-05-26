@@ -126,6 +126,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: 'Muli', sans-serif;
 }
 
 #container {
@@ -556,4 +557,145 @@ button {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+
+/*-------------------BREADCRUMBS-----------------*/
+
+
+/* Style the list */
+
+ul.breadcrumb {
+    padding: 10px 35px;
+    list-style: none;
+    background-color: #F2E6DA;
+}
+
+
+/* Display list items side by side */
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    color: #888888;
+}
+
+
+/* Add a slash symbol (/) before/behind each list item */
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #888888;
+    content: "/\00a0";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+    color: #888888;
+    text-decoration: none;
+}
+
+
+/* Add a color on mouse-over */
+
+ul.breadcrumb li a:hover {
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 10px;
+        color: #888888;
+    }
+    ul.breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+        background-color: #F2E6DA;
+    }
+}
+
+
+/*------------------------Gallery---------------------*/
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 40px;
+    font-family: 'Calibri', 'CalibriRegular', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.gallery {}
+
+.gallery .previews,
+.gallery .full,
+.gallery .desc {
+    float: left;
+    margin-right: 10px;
+}
+
+.gallery .desc,
+.gallery .full {
+    width: 250px;
+    font-size: 12px;
+}
+
+.gallery .desc h2 {
+    margin-top: 0;
+}
+
+.gallery .previews a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gallery .full,
+.gallery .full img {
+    height: 400px;
+}
+
+.gallery .previews a,
+{}
+
+.gallery .previews a:hover {
+    -moz-box-shadow: 0 0 20px #FF6F61;
+    -webkit-box-shadow: 0 0 20px #FF6F61;
+    box-shadow: 0 0 20px #FF6F61;
+}
+
+.gallery .previews a.selected {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.gallery .full img:hover {
+    cursor: pointer;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*-------Colorselector-----------*/
+
+.colorselection {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.colorselection img {
+    margin-left: 10px;
+    border: 2px solid #eeeeee;
 }
