@@ -622,11 +622,7 @@ ul.breadcrumb li a:hover {
 /*------------------------Gallery---------------------*/
 
 .container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-bottom: 40px;
-    font-family: 'Calibri', 'CalibriRegular', Verdana, Arial, Helvetica, sans-serif;
+    padding: 20px 20px 40px 20px;
 }
 
 .gallery {}
@@ -705,8 +701,7 @@ ul.breadcrumb li a:hover {
 /*--- Product description position to the right of the images -----*/
 
 .product-info {
-    text-align: center;
-    width: 900px;
+    text-align: left;
     padding: 20px;
 }
 
@@ -734,9 +729,7 @@ ul.breadcrumb li a:hover {
 
 .model {
     font-size: 14px;
-    text-align: center;
-    width: 500px;
-    margin-left: 360px;
+    text-align: left;
 }
 
 
@@ -744,12 +737,9 @@ ul.breadcrumb li a:hover {
 
 .price {
     font-size: 30px;
-    margin-left: 120px;
 }
 
-.purchase-btn {
-    margin-left: 60px;
-}
+.purchase-btn {}
 
 .purchase-btn button {
     margin-left: 30px;
@@ -779,7 +769,16 @@ ul.breadcrumb li a:hover {
     flex-wrap: nowrap;
 }
 
-.column1,
-.column2 {
-    max-width: 50%;
+.maincontainer__column {
+    width: 50%;
+    margin: 0 30px;
+}
+
+@media (max-width: 600px) {
+    .maincontainer {
+        flex-wrap: wrap;
+    }
+    .maincontainer__column {
+        width: 100%;
+    }
 }
