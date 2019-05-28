@@ -522,7 +522,7 @@ button {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 2%;
+    padding: 2% 2%;
 }
 
 
@@ -537,6 +537,7 @@ button {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    height: 50%;
 }
 
 
@@ -593,7 +594,7 @@ ul.breadcrumb li+li:before {
 /* Add a color to all links inside the list */
 
 ul.breadcrumb li a {
-    color: #888888;
+    color: #222;
     text-decoration: none;
 }
 
@@ -622,11 +623,7 @@ ul.breadcrumb li a:hover {
 /*------------------------Gallery---------------------*/
 
 .container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-bottom: 40px;
-    font-family: 'Calibri', 'CalibriRegular', Verdana, Arial, Helvetica, sans-serif;
+    padding: 20px 20px 40px 20px;
 }
 
 .gallery {}
@@ -642,7 +639,6 @@ ul.breadcrumb li a:hover {
 .gallery .full {
     width: 250px;
     font-size: 12px;
-    padding-right:75px;  /* Stephanie added this padding to postion text */
 }
 
 .gallery .desc h2 {
@@ -654,13 +650,11 @@ ul.breadcrumb li a:hover {
     margin-bottom: 5px;
 }
 
-.gallery .full,
-.gallery .full img {
-    height: 400px;
-}
+.gallery .full {}
 
-.gallery .previews a,
-{}
+.previews a img {
+    display: block;
+}
 
 .gallery .previews a:hover {
     -moz-box-shadow: 0 0 20px #FF6F61;
@@ -694,7 +688,7 @@ ul.breadcrumb li a:hover {
     font-weight: 400;
     display: inline-block;
     margin-left: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 .colorselection img {
@@ -702,65 +696,103 @@ ul.breadcrumb li a:hover {
     border: 2px solid #eeeeee;
 }
 
+/*-------------------- Product Page -------------------------*/
 /*--- Product description position to the right of the images -----*/
 
 .product-info {
-    text-align:center; 
-    width:900px;
-    padding:20px;
+    text-align: left;
+    padding: 20px;
 }
 
-.product-info h3{
-    font-weight:normal;
+.product-info h3 {
+    font-weight: normal;
 }
 
-.product-info ul{
+.product-info ul {
     list-style: none;
 }
 
+
 /*---- Size buttons ----*/
+
 .size-container {
     font-size: 16px;
     font-weight: 400;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
-.size-container .size-btns button a:hover{   /* want to change size of buttons and add hover */
-    color:#FF6F61;
+.size-btns button:hover {
+    /* want to change size of buttons and add hover */
+    background-color: #B2DFDB;
+    color:black;
 }
 
 .model {
-    font-size:14px;
-    text-align: center;
-    width:500px;
-    margin-left:360px;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 20px;
 }
+
 
 /*---- Price ----- */
+
 .price {
-    font-size:30px;
-    margin-left:120px;
+    font-size: 30px;
+    text-align:center;
+    padding-bottom:20px;
 }
 
-.purchase-btn  {
-    margin-left:60px;
+.purchase-btn {
+    display:block;
+    text-align:center;
+    
 }
 
-.purchase-btn button{
-    margin-left:30px;
+.purchase-btn button {
     background-color: #FF6F61;
 }
 
-/*---- Comment Box ----- */ 
+.purchase-btn button:hover{
+    color:black;
+}
+
+
+/*---- Comment Box ----- */
+
 .comment-box {
-    max-width:500px;
+    max-width: 500px;
     margin: 0 auto;
     border: 2px solid black;
-    text-align:center;
+    text-align: center;
 }
-.comment-box textarea{
-    width:100%;
-    height:100%;
+
+.comment-box textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.comment-box button:hover{
+    color:#B2DFDB;
 }
 
 
+/*-----------------MAIN CONTAINER STYLES------------------*/
+
+.maincontainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.maincontainer__column {
+    width: 50%;
+    margin: 0 30px;
+}
+
+@media (max-width: 600px) {
+    .maincontainer {
+        flex-wrap: wrap;
+    }
+    .maincontainer__column {
+        width: 100%;
+    }
+}
