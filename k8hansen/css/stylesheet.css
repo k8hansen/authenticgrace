@@ -1,6 +1,6 @@
 .about {
     height: 100vh;
-    padding: 40px;
+    padding: 35px 80px;
 }
 
 .resume {
@@ -16,11 +16,19 @@
 .art {
     height: 100vh;
     padding: 40px;
+    margin-bottom: 25px;
 }
 
 .contact {
     height: 100vh;
     padding: 40px;
+}
+
+
+/*-------------------Navigation-------------------*/
+
+.nav-wrapper li {
+    color: slateblue;
 }
 
 
@@ -57,4 +65,9 @@
 
 /*--------ART CARDS----------*/
 
-.art {}
+.aaart {}
+
+.socialmedia,
+.far .fab {
+    font-size: 30px;
+}
