@@ -7,9 +7,6 @@ Project is an assignment for The Moms Can Code School. Project will remain minim
 
 Stephanie McInelly + Kate Hansen
 
-## NEW SECTION
-
-
 
 ## Credits + License
 
